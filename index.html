@@ -4,13 +4,107 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <title>Python</title>
 </head>
 
 <body>
-  <h1>python</h1>
-  <p>what is python? this page of the website will cover the basics of the langauge. these are things that are found in
-    nearly all programming languages</p>
+  <h1>Python</h1>
+  <p>What is python? this page of the website will cover the basics of the langauge. These are things that are found in
+    nearly all programming languages.</p>
+  <h2>Variables:</h2>
+  <p>You assign variable by giving them a name, adding an equal sign and then giving the variable a value (as shown
+    below):
+  <pre><code>[insert variable name here] = [insert variable value here]</code></pre>
+  </p>
+  <p>The types of variables you need to know are:</p>
+  <ul>
+    <li>String (text):
+      <pre><code>
+      x = 'hello world!'
+    </code></pre>
+      <p>When making a string variable, the value HAS to be within single quotes ('') or double quotes (""). If you
+        want to make a string containing something like the word "you're" you just use double quotes to define the value
+        and then you can freely use single quotes inside of it</p>
+    </li>
+    <li>Int/integer (numbers)
+      <pre><code>
+      x = 123
+      </code></pre>
+      <p>Note that while you can have a value of a variable start with a number or only be a number, you can not have a
+        number at the start of a variable name. Anywhere else in the name is fine, just not as the first letter (a
+        variable also cannot be named numbers).</p>
+    </li>
+    <li>Boolean (True or False)
+      <pre><code>
+      x = False
+      x = True
+      </code></pre>
+      <p>In python, all booleans have to start with a capital letter, idk why but they do.</p>
+    </li>
+    <li>Array (a type of list)
+      <pre><code>
+      x = []
+      </code></pre>
+      <p>Arrays can be of any size and of any content, the only thing all arrays have in common is that they are defined
+        using square brackets and you seperate the values inside by putting a comma after every value. When you add
+        value into an array you simply add them as if you were to define the variable normally. Arrays can become
+        complicated but these are the types you will use the most:</p>
+      <p>Example of a string array:</p>
+      <pre><code>
+      x = ['this', 'is', 'a', 'string', 'array']
+      </code></pre>
+      <p>Example of a number array:</p>
+      <pre><code>
+      x = [12, 4, 789123, 0323]
+      </code></pre>
+      <p>Example of a boolean array:</p>
+      <pre><code>
+      x = [True, True, False]
+      </code></pre>
+      <p>Example of a mixed array:</p>
+      <pre><code>
+      x = [True, 123, 'hello', 1, False]
+      </code></pre>
+    </li>
+    <li>Object (a different type of list)
+      <pre><code>
+      x = {}
+      </code></pre>
+      <p>Objects are lists where you aslo need to give the values a name. There are two things to think about, one is
+        that it is defined using curly brackets, and the other is that instead of the '=' sign when defining variables
+        it uses ':'. it has the same principles as an array but the
+        same variable naming rules as normal variable, an example of what an object might look like:</p>
+      <pre><code>
+      dog = {
+        play: "likes it"
+        hungry: True
+        yearsOld: 6
+      }
+      </code></pre>
+      <p>The way you would access these inner variables or 'sub variables' is by putting the object name followed by a
+        period followed by the sub variable's name, example:</p>
+      <pre><code>
+      dog.play = 'likes it'
+      </code></pre>
+      <p>In the example above I'm only using using the equal sign to show that dog.play has the value of 'likes it' but
+        the example also shows how you would change or 're-assign' the sub variables.</p>
+    </li>
+    <li>Missing data (null/undefined)
+      <pre><code>
+      x = null
+      x = undefined
+      </code></pre>
+      <p>You normally only see these variable values if you encounter an error. I am honestly not even sure if you can
+        assign null as a value since 'null' means that the 'item' (variables, functions, etc) doesn't exist and
+        undefined
+        means that the variable has not been assigned a value</p>
+    </li>
+  </ul>
+  <p>These are the basic (and most used) variables and variable values. These can become advanced, such as putting in
+    object inside of object, or object inside of arrays, or vice versa. They can also have the value of entire 100 line
+    functions. But don't let that scare you because even if you know them really well you would rarely actually use
+    them.</p>
 </body>
 
 </html>
