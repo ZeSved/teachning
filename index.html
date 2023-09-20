@@ -15,7 +15,9 @@
   <h2>Variables:</h2>
   <p>You assign variable by giving them a name, adding an equal sign and then giving the variable a value (as shown
     below):
-  <pre><code>[insert variable name here] = [insert variable value here]</code></pre>
+  <pre><code>
+  [insert variable name here] = [insert variable value here]
+  </code></pre>
   </p>
   <p>The types of variables you need to know are:</p>
   <ul>
@@ -67,7 +69,7 @@
       x = [True, 123, 'hello', 1, False]
       </code></pre>
     </li>
-    <li>Object (a different type of list)
+    <!--    <li>Object (a different type of list)
       <pre><code>
       x = {}
       </code></pre>
@@ -77,9 +79,9 @@
         same variable naming rules as normal variable, an example of what an object might look like:</p>
       <pre><code>
       dog = {
-        play: "likes it"
-        hungry: True
-        yearsOld: 6
+        play: "likes it",
+        hungry: True,
+        yearsOld: 6,
       }
       </code></pre>
       <p>The way you would access these inner variables or 'sub variables' is by putting the object name followed by a
@@ -89,7 +91,7 @@
       </code></pre>
       <p>In the example above I'm only using using the equal sign to show that dog.play has the value of 'likes it' but
         the example also shows how you would change or 're-assign' the sub variables.</p>
-    </li>
+    </li>-->
     <li>Missing data (null/undefined)
       <pre><code>
       x = null
@@ -98,13 +100,63 @@
       <p>You normally only see these variable values if you encounter an error. I am honestly not even sure if you can
         assign null as a value since 'null' means that the 'item' (variables, functions, etc) doesn't exist and
         undefined
-        means that the variable has not been assigned a value</p>
+        means that the variable has not been assigned a value.</p>
     </li>
   </ul>
   <p>These are the basic (and most used) variables and variable values. These can become advanced, such as putting in
     object inside of object, or object inside of arrays, or vice versa. They can also have the value of entire 100 line
     functions. But don't let that scare you because even if you know them really well you would rarely actually use
     them.</p>
+  <h2>Basic functions:</h2>
+  <p>Functions are reusable code blocks, in this section I will only cover the 3 basic ones:</p>
+  <ul>
+    <li>print()
+      <pre><code>
+      print()
+      </code></pre>
+      <p>print is the most basic function in python, it is also one of the pre-made functions. It is very simple to use,
+        just type print() and within the paranthesis type what you want to print</p>
+      <p>Example of printing a string:</p>
+      <pre><code>
+      print('Hello World!') <em># Hello world! will show up in the console</em> 
+      </code></pre>
+      <p>Example of printing a number:</p>
+      <pre><code>
+      print(5) <em># 5 will show up in the console</em> 
+      </code></pre>
+      <p>Example of printing an array:</p>
+      <pre><code>
+      print(['this', 'is', 'an', 'array', 123, True]) 
+
+      <em># ['this', 'is', 'an', 'array', 123, True] will show up in the console</em>
+      </code></pre>
+      <p>Example of printing a variable:</p>
+      <pre><code>
+      x = 'hello world!'
+      print(x)
+
+      <em># hello world! will show up in the console</em>
+      </code></pre>
+      <p>All variables can be printed and when printed they will show their value (as shown in the example above).</p>
+      <p></p>
+    </li>
+    <li>len()
+      <pre><code>
+      len()
+      </code></pre>
+      <p>len() is used to display the length of anything from variables to strings to arrays. You use it by putting
+        whatever you want to know the length of inside its paranthesis (the things inside a function's paranthesis are
+        called parameters). </p>
+      <p>Example of printing the number of characters in a string:</p>
+      <pre><code>
+      print(len('hello'))
+
+      <em>
+      # Since the word hello contains 5 letters, 
+      5 will be printed to the console.</em>
+      </code></pre>
+    </li>
+  </ul>
 </body>
 
 </html>
